@@ -1,2 +1,6 @@
 var jokeService = require('../service/jokeService')
-jokeService.emit('saveJoke')
+var jokeModel = require('../models/jokeModel')
+jokeModel.find().exec(function(err,result){
+    var index = parseInt(Math.random()*result.length);
+    console.log(index)
+})
