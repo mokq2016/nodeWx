@@ -1,6 +1,6 @@
 const EventEmitter = require('events');
 class JokeService extends EventEmitter {
-
+    
 }
 const jokeService = new JokeService();
 jokeService.on('saveJoke',function(){

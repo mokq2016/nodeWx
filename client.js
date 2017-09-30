@@ -22,19 +22,19 @@ var callback = function(response) {
       //console.log(body);
       var $ = cheerio.load(body,{decodeEntities: false}); //采用cheerio模块解析html
       $('#text110 p').each(function(){
-        //console.log($(this).html())
-        var joke = new jokeEntity({
+        console.log($(this).html())
+      /*  var joke = new jokeEntity({
           type:'ym',
           content:$(this).html()
-        })
-        joke.save(function(err,joke){
+        })*/
+        /*joke.save(function(err,joke){
           if(err){
             console.log(err);
             return;
           }else{
             console.log(joke)
           }
-        })
+        })*/
       })
     });
   }
