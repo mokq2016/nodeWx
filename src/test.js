@@ -4,12 +4,13 @@
 //     var index = parseInt(Math.random()*result.length);
 //     console.log(index)
 // })
-var eventsManage = require('./events')
-class Joke {
-    constructor(){
-        eventsManage.on('upload',function(){
-            console.log(124)
-        })
-    }
-}
-module.exports = new Joke()
+// var eventsManage = require('./events')
+// class Joke {
+//     constructor(){
+//         eventsManage.on('upload',function(){
+//             console.log(124)
+//         })
+//     }
+// }
+// module.exports = new Joke()
+var util = require(util)

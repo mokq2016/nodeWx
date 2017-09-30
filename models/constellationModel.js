@@ -1,6 +1,9 @@
 var mongoose = require('../db/mongodb');
 
 var constellationScema = mongoose.Schema({
+    type:String,
+    date:String,
+    time:String,
     summary:String,
     general:String,
     love:String,
